@@ -25,7 +25,7 @@ int main() {
     server_address.sin_addr.s_addr = inet_addr("127.0.0.1");
     server_address.sin_port = htons(PORT);
 
-    if(bind(file_descriptor_server, (struct sockaddr*)&server_address,sizeof(server_address)) < 0 ) {
+    if(bind(file_descriptor_server, (struct sockaddr*)&server_address,address_length) < 0 ) {
         perror("Cannot bind to port");
         exit(EXIT_FAILURE);
     }
