@@ -16,14 +16,20 @@ On Terminal window 2,
 
 Test case:
    
-Scenario	                            Actual output	                    Expected output	                   Result
----------                             ---------------                   ----------------                   -------
-The client reads daytime              At server side,                   At server side,                    Pass
-from both the servers,                The integer received from         The integer received from
-converts it to readable format        the client is 6                   the client is 6
-and prints the values as well         At client side,                   At client side,
-as difference between them.           The integer received back from    The integer received back from
-                                      the server is 5                   the server is 5
+Scenario	                             Actual output	                    Expected output	                   Result
+---------                             ---------------                     ----------------                   -------
+The client sends integer              At server side,                     At server side,                    Pass
+value to the server.                  The integer received from           The integer received from
+Server decrerments the value          the client is 6                     the client is 6
+and sends it back.                    At client side,                     At client side,
+                                      The integer received back from      The integer received back from
+                                      the server is 5                     the server is 5
+                                       
+,                         
+                          
+                            
+               
+                                                        
 
 
 
